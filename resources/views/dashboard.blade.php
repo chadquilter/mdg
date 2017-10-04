@@ -13,8 +13,45 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h3>You are logged in!</h3>
+
                     <a href="/jobs/create" class="btn btn-primary">Create Job</a>
+                    <a href="/quote/create" class="btn btn-success">Create Quote</a>
+                    <a href="/address/create" class="btn btn-warning">Add Address</a>
+                    <a href="/media/create" class="btn btn-danger">Add Media</a>
+                    @if($user->user_employee)
+                    <h3>Your Job Entries:</h3>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Title</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        @foreach($jobs as $job)
+                        <tr>
+                            <th>{{$job->title}}</th>
+                            <th><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></th>
+                            <th></th>
+                        </tr>
+                        @endforeach
+                    </table>
+                    @endif
+
+                    <h3>Your Quote Entries:</h3>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Title</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        @foreach($jobs as $job)
+                        <tr>
+                            <th>{{$job->title}}</th>
+                            <th><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></th>
+                            <th></th>
+                        </tr>
+                        @endforeach
+                    </table>
+
                 </div>
             </div>
         </div>

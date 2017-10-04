@@ -8,13 +8,16 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-    protected $primaryKey = 'user_id';
+    protected $table = 'users';
+    public $primaryKey = 'id';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [
+    public $timestamps = true;
+
+    public $fillable = [
         'name', 
         'email', 
         'password',
@@ -42,4 +45,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function jobs(){
+        return $this->hasMany('App\Job');
+    }
 }

@@ -55,8 +55,8 @@ class JobsController extends Controller
             4 => 'Custom Walls', 
             5 => 'Distaster Repair');
         
-        $users = User::pluck('name', 'user_id');
-        $current_user = auth()->user()->user_id;
+        $users = User::pluck('name', 'id');
+        $current_user = auth()->user()->id;
 
         return view('jobs.create')
             ->with(compact('job_types', 'bool_types', 
@@ -87,6 +87,7 @@ class JobsController extends Controller
         $job->job_status = $request->input('job_status');
         $job->job_modified_by = $request->input('job_created_by');
         $job->job_created_by = $request->input('job_created_by');
+        $job->user_id = $request->input('job_created_by');
         $job->job_media = $request->input('job_media');
         $job->job_display = $request->input('job_display');
         $job->job_account = $request->input('job_account');
@@ -145,12 +146,7 @@ class JobsController extends Controller
             4 => 'Custom Walls', 
             5 => 'Distaster Repair');
         //no users yet...
-        //$users = User::pluck('user_name', 'user_id');
-        $users = array(
-            3 => 'Dody Grounds',
-            2 => 'Mike Grounds', 
-            1 => 'Chad Quilter', 
-            4 => 'Test Test');
+        $users = User::pluck('name', 'id');
 
         //////
         $job = Job::find($id);
@@ -184,6 +180,7 @@ class JobsController extends Controller
         $job->job_status = $request->input('job_status');
         $job->job_modified_by = $request->input('job_created_by');
         $job->job_created_by = $request->input('job_created_by');
+        $job->user_id = $request->input('job_created_by');
         $job->job_media = $request->input('job_media');
         $job->job_display = $request->input('job_display');
         $job->job_account = $request->input('job_account');
