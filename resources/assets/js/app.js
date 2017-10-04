@@ -13,7 +13,7 @@ try {
     require('bootstrap');
 
     require('json2');
-    require('raphael-2.0.1');
+    require('raphael');
 
 } catch (e) {}
 
