@@ -18,7 +18,7 @@
                     <a href="/quote/create" class="btn btn-success">Create Quote</a>
                     <a href="/address/create" class="btn btn-warning">Add Address</a>
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
-                    @if($user->user_employee)
+                    @if(count($jobs) > 0)
                     <h3>Your Job Entries:</h3>
                     <table class="table table-striped">
                         <tr>
@@ -36,6 +36,7 @@
                     </table>
                     @endif
 
+                    @if(count($jobs) > 0)
                     <h3>Your Quote Entries:</h3>
                     <table class="table table-striped">
                         <tr>
@@ -51,6 +52,7 @@
                         </tr>
                         @endforeach
                     </table>
+                    @endif
 
                 </div>
             </div>

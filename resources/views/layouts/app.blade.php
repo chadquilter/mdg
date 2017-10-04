@@ -9,6 +9,7 @@
     <title>{{ config('app.name', 'MDG') }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
@@ -20,7 +21,6 @@
             @yield('content')
         </div>
     </div>
-
     <!-- Scripts -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 </body>
