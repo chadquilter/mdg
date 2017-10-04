@@ -23,47 +23,7 @@
         </div>
 
 
-        <div id="editor"></div>
-
-<form action="save.php" method="post">
-  <input type="hidden" name="data" />
-  <input type="submit" value="Save" />
-</form>
-
-<script type="text/javascript">
-  var sketchpad = Raphael.sketchpad("editor", {
-    width: 400,
-    height: 400,
-    editing: true
-  });
-
-  // When the sketchpad changes, update the input field.
-  sketchpad.change(function() {
-    $("#data").val(sketchpad.json());
-  });
-</script>
-
-<div id="viewer"></div>
-
-<script type="text/javascript">
-  var strokes = [{
-    type:"path",
-    path:[["M",10,10],["L",390,390]],
-    fill:"none", "stroke":"#000000",
-    stroke-opacity:1,
-    stroke-width:5,
-    stroke-linecap:"round",
-    stroke-linejoin:"round"
-  }];
-  var sketchpad = Raphael.sketchpad("viewer", {
-    width: 400,
-    height: 400,
-    strokes: strokes,
-    editing: false
-  });
-</script>
-
-<div id="editor" class="widget" style="height:260px;"></div>
+        <div id="editor" class="widget" style="height:260px;"></div>
 <input type="hidden" id="data2" name="data2" />
 
 <div class="clear widget_actions span-2">
@@ -187,6 +147,7 @@
     update_actions();
   });
 </script>
+
 
         <div class="form=group">
             {{Form::label('job_type', 'Job Type:')}}
