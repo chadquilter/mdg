@@ -17,7 +17,7 @@
             {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
         </div>
 
-        <div id="canvasDiv"></div>
+        <div id="canvasDiv">test</div>
 
         <div class="form=group">
             {{Form::label('job_type', 'Job Type:')}}
