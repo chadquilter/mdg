@@ -11,6 +11,10 @@ try {
     window.$ = window.jQuery = require('jquery');
     window.Popper = require('popper.js').default;
     require('bootstrap');
+
+    require('json2');
+    require('raphael-2.0.1');
+
 } catch (e) {}
 
 window.Vue = require('vue');

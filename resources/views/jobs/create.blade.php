@@ -2,9 +2,8 @@
 
 
 @section('content')
-  <script type="text/javascript" src="http://ianli.github.io/raphael-sketchpad/javascripts/raphael-2.0.1.js"></script>
-  <script type="text/javascript" src="http://ianli.github.io/raphael-sketchpad/javascripts/json2.min.js"></script>
-  <script type="text/javascript" src="http://ianli.github.io/raphael-sketchpad/src/raphael.sketchpad.js"></script>
+
+<script src="{!! mix('js/app.js') !!}"</script>
 
 
     <h1>Create Job</h1>
