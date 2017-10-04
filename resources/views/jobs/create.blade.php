@@ -3,8 +3,6 @@
 
 @section('content')
 
-<script src="{!! mix('js/app.js') !!}"</script>
-
 
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST']) !!}
