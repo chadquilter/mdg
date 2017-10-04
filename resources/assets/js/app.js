@@ -14,7 +14,7 @@ try {
 
     require('json2');
     require('raphael');
-    require('scratchpad');
+    require('sketchpad');
 
 } catch (e) {}
 
