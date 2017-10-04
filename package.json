@@ -19,6 +19,9 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "popper.js": "^1.11.0"
+    "bootstrap": "^3.3.7",
+    "json2": "^0.4.0",
+    "popper.js": "^1.11.0",
+    "raphael": "^2.2.7"
   }
 }
