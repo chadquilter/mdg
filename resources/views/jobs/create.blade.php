@@ -2,6 +2,10 @@
 
 
 @section('content')
+  <script type="text/javascript" src="raphael.min.js"></script>
+  <script type="text/javascript" src="json2.min.js"></script>
+  <script type="text/javascript" src="raphael.sketchpad.js"></script>
+
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST']) !!}
         <div class="form=group">
@@ -17,7 +21,171 @@
             {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
         </div>
 
-        <div id="canvasDiv">test</div>
+
+        <div id="editor"></div>
+
+<form action="save.php" method="post">
+  <input type="hidden" name="data" />
+  <input type="submit" value="Save" />
+</form>
+
+<script type="text/javascript">
+  var sketchpad = Raphael.sketchpad("editor", {
+    width: 400,
+    height: 400,
+    editing: true
+  });
+
+  // When the sketchpad changes, update the input field.
+  sketchpad.change(function() {
+    $("#data").val(sketchpad.json());
+  });
+</script>
+
+<div id="viewer"></div>
+
+<script type="text/javascript">
+  var strokes = [{
+    type:"path",
+    path:[["M",10,10],["L",390,390]],
+    fill:"none", "stroke":"#000000",
+    stroke-opacity:1,
+    stroke-width:5,
+    stroke-linecap:"round",
+    stroke-linejoin:"round"
+  }];
+  var sketchpad = Raphael.sketchpad("viewer", {
+    width: 400,
+    height: 400,
+    strokes: strokes,
+    editing: false
+  });
+</script>
+
+<div id="editor" class="widget" style="height:260px;"></div>
+<input type="hidden" id="data2" name="data2" />
+
+<div class="clear widget_actions span-2">
+  <div class="_title">Color</div>
+  <div id="editor_black" class="selected">Black</div>
+  <div id="editor_red">Red</div>
+</div>
+<div class="widget_actions span-2">
+  <div class="_title">Width</div>
+  <div id="editor_thin" class="selected">Thin</div>
+  <div id="editor_thick">Thick</div>
+</div>
+<div class="widget_actions span-2">
+  <div class="_title">Opacity</div>
+  <div id="editor_solid" class="selected">Solid</div>
+  <div id="editor_fuzzy">Fuzzy</div>
+</div>
+<div class="widget_actions span-2 last">
+  <div id="editor_undo" class="disabled">Undo</div>
+  <div id="editor_redo" class="disabled">Redo</div>
+  <div id="editor_clear" class="disabled">Clear</div>
+</div>
+<div class="clear"></div>
+<div class="widget_actions span-4">
+  <div id="editor_draw_erase">Draw</div>
+</div>
+<div class="widget_actions span-4 last">
+  <div id="editor_animate">Animate!</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var sketchpad = Raphael.sketchpad("editor", {
+      height: 260,
+      width: 260,
+      editing: true // true is default
+    });
+
+    // When the sketchpad changes, update the input field.
+    sketchpad.change(function() {
+      $("#data2").val(sketchpad.json());
+    });
+
+    sketchpad.strokes([{
+      "type":"path",
+      "path":[["M",10,10],["L",90,90]],
+      "fill":"none",
+      "stroke":"#000000",
+      "stroke-opacity":1,
+      "stroke-width":5,
+      "stroke-linecap":"round",
+      "stroke-linejoin":"round"
+    }]);
+
+    function enable(element, enable) {
+      if (enable) {
+        $(element).removeClass("disabled");
+      } else {
+        $(element).addClass("disabled");
+      }
+    };
+
+    function select(element1, element2) {
+      $(element1).addClass("selected");
+      $(element2).removeClass("selected");
+    }
+
+    $("#editor_undo").click(function() {
+      sketchpad.undo();
+    });
+    $("#editor_redo").click(function() {
+      sketchpad.redo();
+    });
+    $("#editor_clear").click(function() {
+      sketchpad.clear();
+    });
+    $("#editor_animate").click(function() {
+      sketchpad.animate();
+    });
+
+    $("#editor_thin").click(function() {
+      select("#editor_thin", "#editor_thick");
+      sketchpad.pen().width(5);
+    });
+    $("#editor_thick").click(function() {
+      select("#editor_thick", "#editor_thin");
+      sketchpad.pen().width(15);
+    });
+    $("#editor_solid").click(function() {
+      select("#editor_solid", "#editor_fuzzy");
+      sketchpad.pen().opacity(1);
+    });
+    $("#editor_fuzzy").click(function() {
+      select("#editor_fuzzy", "#editor_solid");
+      sketchpad.pen().opacity(0.3);
+    });
+    $("#editor_black").click(function() {
+      select("#editor_black", "#editor_red");
+      sketchpad.pen().color("#000");
+    });
+    $("#editor_red").click(function() {
+      select("#editor_red", "#editor_black");
+      sketchpad.pen().color("#f00");
+    });
+    $("#editor_draw_erase").toggle(function() {
+      $(this).text("Erase");
+      sketchpad.editing("erase");
+    }, function() {
+      $(this).text("Draw");
+      sketchpad.editing(true);
+    });
+
+    function update_actions() {
+      enable("#editor_undo", sketchpad.undoable());
+      enable("#editor_redo", sketchpad.redoable());
+      enable("#editor_clear", sketchpad.strokes().length > 0);
+    }
+
+    sketchpad.change(update_actions);
+
+    update_actions();
+  });
+</script>
 
         <div class="form=group">
             {{Form::label('job_type', 'Job Type:')}}
@@ -59,76 +227,8 @@
             </div>
             </br>
         @endif
-        <script type="text/javascript">
-          var canvasDiv = document.getElementById('canvasDiv');
-          canvas = document.createElement('canvas');
-          canvas.setAttribute('width', canvasWidth);
-          canvas.setAttribute('height', canvasHeight);
-          canvas.setAttribute('id', 'canvas');
-          canvasDiv.appendChild(canvas);
-          if(typeof G_vmlCanvasManager != 'undefined') {
-            canvas = G_vmlCanvasManager.initElement(canvas);
-          }
-          context = canvas.getContext("2d");
-
-          $('#canvas').mousedown(function(e){
-            var mouseX = e.pageX - this.offsetLeft;
-            var mouseY = e.pageY - this.offsetTop;
-
-            paint = true;
-            addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
-            redraw();
-          });
-
-          $('#canvas').mousemove(function(e){
-            if(paint){
-              addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
-              redraw();
-            }
-          });
-
-          $('#canvas').mouseup(function(e){
-            paint = false;
-          });
-
-          $('#canvas').mouseleave(function(e){
-            paint = false;
-          });
-
-          var clickX = new Array();
-          var clickY = new Array();
-          var clickDrag = new Array();
-          var paint;
-
-          function addClick(x, y, dragging)
-          {
-            clickX.push(x);
-            clickY.push(y);
-            clickDrag.push(dragging);
-          }
-
-          function redraw(){
-  context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
-
-  context.strokeStyle = "#df4b26";
-  context.lineJoin = "round";
-  context.lineWidth = 5;
-
-  for(var i=0; i < clickX.length; i++) {
-    context.beginPath();
-    if(clickDrag[i] && i){
-      context.moveTo(clickX[i-1], clickY[i-1]);
-     }else{
-       context.moveTo(clickX[i]-1, clickY[i]);
-     }
-     context.lineTo(clickX[i], clickY[i]);
-     context.closePath();
-     context.stroke();
-  }
-}
 
 
-        </script>
 
         {{Form::submit('Submit', ['class=btn btn-primary'])}}
         {!! Form::close() !!}
