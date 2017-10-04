@@ -30,7 +30,9 @@
           </div>
         </div>
 
-  <canvas class="sketchpad" id="sketchpad"><canvas>
+        <div style="text-align: center">
+          <canvas class="sketchpad" id="sketchpad"><canvas>
+        </div>
 
 
         <div class="form=group">
