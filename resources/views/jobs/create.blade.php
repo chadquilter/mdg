@@ -2,9 +2,10 @@
 
 
 @section('content')
-  <script type="text/javascript" src="raphael.min.js"></script>
-  <script type="text/javascript" src="json2.min.js"></script>
-  <script type="text/javascript" src="raphael.sketchpad.js"></script>
+
+  <script src="{{ asset('js/raphael.min.js') }}"></script>
+  <script src="{{ asset('js/json2.min.js') }}"></script>
+  <script src="{{ asset('js/raphael.sketchpad.js') }}"></script>
 
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST']) !!}
