@@ -59,7 +59,7 @@
             </div>
             </br>
         @endif
-        <script type="javascript">
+        <script type="text/javascript">
           var canvasDiv = document.getElementById('canvasDiv');
           canvas = document.createElement('canvas');
           canvas.setAttribute('width', canvasWidth);
