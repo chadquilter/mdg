@@ -7,14 +7,16 @@
 
 require('./bootstrap');
 
+require('json2');
+require('raphael');
+require('sketchpad');
+
 try {
     window.$ = window.jQuery = require('jquery');
     window.Popper = require('popper.js').default;
     require('bootstrap');
 
-    require('json2');
-    require('raphael');
-    require('sketchpad');
+
 
 } catch (e) {}
 
