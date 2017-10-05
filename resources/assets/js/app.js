@@ -9,7 +9,7 @@ require('./bootstrap');
 
 require('json2');
 require('raphael');
-require('sketchpad');
+require('dojo');
 
 try {
     window.$ = window.jQuery = require('jquery');
