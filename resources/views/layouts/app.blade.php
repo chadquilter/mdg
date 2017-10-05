@@ -20,6 +20,7 @@
             @include('inc.messages')
             @yield('content')
         </div>
+        @include('inc.footer')
     </div>
     <!-- Scripts -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
