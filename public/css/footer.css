@@ -18,11 +18,11 @@ body {
 }
 
 div.foot-container {
-  background-color: #706f6d;
+  background-color: black;
 }
 
 div.footer-top {
-  background-color: black;
+  background-color: #706f6d;
 }
 
 div.footer-bottom {
