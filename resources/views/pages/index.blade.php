@@ -6,8 +6,8 @@
                               padding-left: 0px !important;
                               padding-right: 0px !important;
                           }</style>
-
-  		<div class="tp-shadowcover" style="background-color: rgb(233, 233, 233); background-image: none;"></div></div><!-- END REVOLUTION SLIDER --><div class="fusion-clearfix"></div></div></div><div class="fusion-clearfix"></div></div></div>
+                          test test
+  		<div class="tp-shadowcover" style="background-color: rgb(233, 233, 233); background-image: none;"></div>
     </div>
             <div class="jumbotron text-center">
                 <h1>{{$title}}</h1>
