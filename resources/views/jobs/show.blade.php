@@ -18,7 +18,7 @@
                 {{$job->job_status}}
             </p>
             <hr>
-            <small>Job Created: {{$job->created_at}}</small>
+            <small>Job Created: {{$job->created_at}} By: {{$job->user->name}}</small>
             <hr>
             <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a>
             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
@@ -29,11 +29,10 @@
         </div>
     @else
         <div class="alert alert-danger">
-            <strong>The Job id used was not found!</strong> 
-            Please go back to the jobs listing. 
+            <strong>The Job id used was not found!</strong>
+            Please go back to the jobs listing.
         </div>
     @endif
     </br>
     </div>
 @endsection
-
