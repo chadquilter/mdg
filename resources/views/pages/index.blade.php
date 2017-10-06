@@ -9,7 +9,7 @@ text-align: center;
 }
 
 div.image_display_r {
-  align-self: right;
+  align: right;
 }
 
 div.image_display_text_container {
@@ -31,7 +31,7 @@ padding: 10px;
       We are a construction company based out of marble falls, TX, that specializes in Custom Homes and Additions, Home Repair and Pavement.
     </p>
     <div class="image_display image_display_r">
-      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/_6.jpg">
+      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/6_orig.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
       </div>
