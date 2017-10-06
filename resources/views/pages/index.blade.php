@@ -18,15 +18,13 @@ padding: 10px;
         <p>Our work is a cut above the rest!</p>
       </div>
     </div>
+    </br>
+    <div class="container">
     <h1>{{$title}}</h1>
     <p>
       Welcome!
       </br>
       We are a construction company based out of marble falls, TX, that specializes in Custom Homes and Additions, Home Repair and Pavement.
     </p>
-	   <p>
-	      <a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
-		    <a class="btn btn-success btn-lg" href="/register" role="button">Register</a>
-	   </p>
   </div>
 @endsection
