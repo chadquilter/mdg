@@ -161,6 +161,11 @@ class JobsController extends Controller
 
         //////
         $job = Job::find($id);
+        //check for auth
+        if(auth()->user()->id !==$job->user_id) {
+          return redirect('/jobs')->with('error', 'Unauthorized Page');
+        }
+
         //edit view
         return view('jobs.edit')->with(compact('job', 'job_types', 'bool_types', 'job_option_types', 'users'));
     }
