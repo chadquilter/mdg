@@ -9,6 +9,9 @@
                           }
   </style>
   <div >
+    <div>
+      <img src="/storage/site_images/scenic-home.jpg">
+    </div>
     <h1>{{$title}}</h1>
     <p>This is the main page</p>
 	   <p>
