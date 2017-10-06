@@ -9,8 +9,8 @@
     <div class="footer-badges" style="width:30%;">
       <p clas="badges">test test</p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    &nbsp
+    <div class="footer-bottom">
+      &nbsp
+    </div>
   </div>
 </footer>
