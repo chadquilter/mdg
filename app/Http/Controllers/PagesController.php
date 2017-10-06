@@ -31,10 +31,8 @@ class PagesController extends Controller
               'Structural Steel',
               'Interior Finish Out',
               'Ground Up Construction',
-              'Demolition',
-              'Time and Material Work – A lot of times there is not time to bid projects due to emergency issues and we will perform all work and track it with daily field tickets.  We have several stime and material contracts were we guarantee our labor and equipment rates for a duration of time and any time that customer needs work completed all they have to do is call and we will schedule work accordingly.',
-              '24 hr. Emergency Service – for whatever the case maybe utility leak, power failure, or clean up of natural disaster we will be at your side to fix the problem by any means necessary.']
-	     );
+              'Demolition'
+            );
        return view('pages.services')->with($data);
     }
 
