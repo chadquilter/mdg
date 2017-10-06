@@ -18,23 +18,6 @@
             {{Form::label('job_notes', 'Notes:')}}
             {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
         </div>
-
-
-        <div class="span-8">
-          <h3>Editor</h3>
-          <p>
-            Draw a sketch below.
-          </p>
-          <div style="height:260px;" class="widget">
-            <div id="sketchpad_editor"></div>
-          </div>
-        </div>
-
-        <div style="text-align: center">
-          <canvas class="sketchpad" id="sketchpad"><canvas>
-        </div>
-
-
         <div class="form=group">
             {{Form::label('job_type', 'Job Type:')}}
             </br>
@@ -75,18 +58,10 @@
             </div>
             </br>
         @endif
-
-
-
         {{Form::submit('Submit', ['class=btn btn-primary'])}}
         {!! Form::close() !!}
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
             CKEDITOR.replace( 'article-ckeditor' );
-            var sketchpad = new Sketchpad({
-              element: '#sketchpad',
-              width: 400,
-              height: 400
-            });
         </script>
 @endsection
