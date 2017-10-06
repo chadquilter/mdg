@@ -8,7 +8,7 @@
                               padding-right: 0px !important;
                           }
   </style>
-  <div class="jumbotron text-center">
+  <div >
     <h1>{{$title}}</h1>
     <p>This is the main page</p>
 	   <p>
