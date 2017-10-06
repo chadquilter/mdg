@@ -21,6 +21,10 @@ div.foot-container {
 
 }
 
+div.footer-badges{
+  width: 250px;
+}
+
 div.footer-top {
   background-color: #706f6d;
 }
