@@ -20,7 +20,7 @@ div.image_display_text_container {
 }
 </style>
     <div class="image_display">
-      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/scenic-home.jpg">
+      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/6_orig.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
       </div>
@@ -35,7 +35,7 @@ div.image_display_text_container {
     </p>
     </br>
     <div class="image_display_r">
-      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/6_orig.jpg">
+      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/scenic-home.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
       </div>
