@@ -10,7 +10,7 @@
   </style>
   <div >
     <div>
-      <img style="width=100%;" src="http://138.68.246.36/storage/site_images/scenic-home.jpg">
+      <img style="width=100%;" src="/images/scenic-home.jpg">
     </div>
     <h1>{{$title}}</h1>
     <p>This is the main page</p>
