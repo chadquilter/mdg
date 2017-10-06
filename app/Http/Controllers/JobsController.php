@@ -19,8 +19,8 @@ class JobsController extends Controller
         //use db to do custom sql instead
         //$jobs = Job::orderBy('created_at', 'job_desc')->get();
         //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
-        
-        $jobs = Job::orderBy('created_at', 'desc')->paginate(1);
+
+        $jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(1);
         //$jobs = Job::orderBy('created_at', 'asc')->get();
         return view('jobs.index')->with('jobs', $jobs);
     }
@@ -33,7 +33,7 @@ class JobsController extends Controller
     public function create()
     {
         $job_option_types = array(
-            'job_media' => 'Job has Media:', 
+            'job_media' => 'Job has Media:',
             'job_display' => 'Display Job to web:',
             'job_account' => 'Job has Account:',
             'job_address'=> 'Job has Address:',
@@ -45,21 +45,21 @@ class JobsController extends Controller
         );
 
         $bool_types = array(
-            1 => 'Yes', 
+            1 => 'Yes',
             0 => 'No');
 
         $job_types = array(
             1 => 'Custom Home',
-            2 => 'Custom Concrete', 
+            2 => 'Custom Concrete',
             3 => 'Custom Kitchen and Bath',
-            4 => 'Custom Walls', 
+            4 => 'Custom Walls',
             5 => 'Distaster Repair');
-        
+
         $users = User::pluck('name', 'id');
         $current_user = auth()->user()->id;
 
         return view('jobs.create')
-            ->with(compact('job_types', 'bool_types', 
+            ->with(compact('job_types', 'bool_types',
                             'job_option_types', 'users', 'current_user'));
     }
 
@@ -124,7 +124,7 @@ class JobsController extends Controller
     public function edit($id)
     {
         $job_option_types = array(
-            'job_media' => 'Job has Media:', 
+            'job_media' => 'Job has Media:',
             'job_display' => 'Display Job to web:',
             'job_account' => 'Job has Account:',
             'job_address'=> 'Job has Address:',
@@ -136,14 +136,14 @@ class JobsController extends Controller
         );
 
         $bool_types = array(
-            1 => 'Yes', 
+            1 => 'Yes',
             0 => 'No');
 
         $job_types = array(
             1 => 'Custom Home',
-            2 => 'Custom Concrete', 
+            2 => 'Custom Concrete',
             3 => 'Custom Kitchen and Bath',
-            4 => 'Custom Walls', 
+            4 => 'Custom Walls',
             5 => 'Distaster Repair');
         //no users yet...
         $users = User::pluck('name', 'id');
