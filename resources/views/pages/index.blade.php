@@ -19,7 +19,7 @@ div.image_display_text_container {
   background-color: white;
 }
 </style>
-    <div class="image_display">
+    <div class="image_display_r">
       <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/6_orig.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
@@ -34,7 +34,7 @@ div.image_display_text_container {
       We are a construction company based out of marble falls, TX, that specializes in Custom Homes and Additions, Home Repair and Pavement.
     </p>
     </br>
-    <div class="image_display_r">
+    <div class="image_display">
       <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/scenic-home.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
