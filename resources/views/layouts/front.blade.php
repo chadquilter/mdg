@@ -9,6 +9,7 @@
     <title>{{ config('app.name', 'MDG') }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
