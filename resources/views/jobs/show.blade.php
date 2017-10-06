@@ -23,9 +23,9 @@
             @if(!Auth::guest())
               @if(Auth::user()->id == $job->user_id)
                 <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a>
-                {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                  {{Form::hidden('_method', 'DELETE')}}
-                  {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                  {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                    {{Form::hidden('_method', 'DELETE')}}
+                    :<wbr>{{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                   {!!Form::close()!!}
                 </br>
               @endif
