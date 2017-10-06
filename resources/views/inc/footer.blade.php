@@ -16,8 +16,8 @@
     </div>
     <div class="footer-badges">
       <center>
-        <image src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png">
-        <image src="http://texas.raamchallenge.com/userfiles/image/Marble%20Falls%20Chamber%20Logo.png" style="width=20%">
+        <image style="width=100px;" src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png">
+        <image style="width=100px;" src="http://texas.raamchallenge.com/userfiles/image/Marble%20Falls%20Chamber%20Logo.png" style="width=20%">
       </center>
 
     </div>
