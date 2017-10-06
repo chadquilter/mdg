@@ -32,7 +32,7 @@ class PagesController extends Controller
               'Interior Finish Out',
               'Ground Up Construction',
               'Demolition'
-            );
+            ]);
        return view('pages.services')->with($data);
     }
 
