@@ -2,7 +2,6 @@
   <div class="footer-top">
     &nbsp
   </div>
-  </br>
   <div class="foot-container">
     <div class="footer-text" styel="width:70%;">
       <p class="text-muted">Place sticky footer content here.</p>
