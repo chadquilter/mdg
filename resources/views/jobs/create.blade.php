@@ -5,7 +5,7 @@
 
 
     <h1>Create Job</h1>
-    {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
         <div class="form=group">
             {{Form::label('job_title', 'Title:')}}
             {{Form::text('job_title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}

@@ -163,7 +163,7 @@ class JobsController extends Controller
         $job = Job::find($id);
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
-          return redirect('/jobs')->with('error', 'Unauthorized Page');
+          return redirect('/jobs')->with('error', 'Unauthorized Page!');
         }
 
         //edit view
@@ -185,8 +185,22 @@ class JobsController extends Controller
             'job_summary' => 'required',
             'job_notes' => 'required',
             'job_created_by' => 'required',
+            //'cover_image' => 'image|nullable|max:1999'
         ]);
 
+/**
+*        if($request->hasFile('cover_image')){
+*          $filenameWithExt = $request->file('cover_image')->getClientOriginalImage();
+*          //get just filenameWithExt
+*          $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+*          //file PATHINFO_FILENAM
+*          $extension = $request->file('cover_image')->getOriginalClientExtension();
+*          //file to store
+*          $filenNameToStore= $filename.'_'.time().'.'.$extension;
+*          //upload
+*          $path = $request->file('cover_image')->sotreAs('public/cover_image', $filenNameToStore);
+*        }
+*/
         // create job
         $job = Job::find($id);
         $job->job_title = $request->input('job_title');
@@ -209,8 +223,6 @@ class JobsController extends Controller
         $job->save();
 
         return redirect('/jobs')->with('success', 'Job Updated');
-
-
     }
 
     /**
@@ -221,9 +233,14 @@ class JobsController extends Controller
      */
     public function destroy($id)
     {
-        $job = Job::find($id);
-        $job->delete();
 
+        $job = Job::find($id);
+        //authorized?
+        if(auth()->user()->id !==$job->user_id) {
+          return redirect('/jobs')->with('error', 'Unauthorized Page!');
+        }
+
+        $job->delete();
         return redirect('/jobs')->with('success', 'Post Deleted');
     }
 }
