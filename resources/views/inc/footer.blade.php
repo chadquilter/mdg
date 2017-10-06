@@ -1,8 +1,8 @@
 <footer class="footer">
-  <div class="footer-top">
-    &nbsp
-  </div>
-  <div class="foot-container">
+  <div class="foot-container navbar-inverse">
+    <div class="footer-top">
+      &nbsp
+    </div>
     <div class="footer-text" styel="width:70%;">
       <center>
         <p class="text-muted">
