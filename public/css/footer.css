@@ -20,3 +20,11 @@ body {
 div.foot-container {
   background-color: grey;
 }
+
+div.footer-top {
+  background-color: black;
+}
+
+div.footer.bottome {
+  background-color: black;
+}
