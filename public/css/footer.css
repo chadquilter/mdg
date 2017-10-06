@@ -18,7 +18,7 @@ body {
 }
 
 div.foot-container {
-  background-color: grey;
+  background-color: #706f6d;
 }
 
 div.footer-top {
@@ -26,5 +26,5 @@ div.footer-top {
 }
 
 div.footer-bottom {
-  background-color: black;
+  background-color: #706f6d;
 }
