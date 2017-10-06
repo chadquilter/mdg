@@ -15,10 +15,10 @@
       </center>
     </div>
     <div class="footer-badges" style="width:30%;">
-      <p clas="badges">test test</p>
-      <image src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png" style="width=100%;">
-      <image src="http://marblefallstri.com/MF_Chamber_Logo.jpg" style="width=100%;">
-
+      <center>
+        <image src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png">
+        <image src="http://marblefallstri.com/MF_Chamber_Logo.jpg">
+      </center>
 
     </div>
     <div class="footer-bottom">
