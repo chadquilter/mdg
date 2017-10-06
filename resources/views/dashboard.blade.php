@@ -28,9 +28,14 @@
                         </tr>
                         @foreach($jobs as $job)
                         <tr>
-                            <th>{{$job->title}}</th>
-                            <th><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></th>
-                            <th></th>
+                            <td>{{$job->title}}</td>
+                            <td><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td>
+                              {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                                  {{Form::hidden('_method', 'DELETE')}}
+                                  {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                              {!!Form::close()!!}
+                            </td>
                         </tr>
                         @endforeach
                     </table>
