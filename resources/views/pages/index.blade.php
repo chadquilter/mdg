@@ -15,7 +15,8 @@ div.image_display_r {
 }
 
 div.image_display_text_container {
-padding: 10px;
+  padding: 10px;
+  background-color: white;
 }
 </style>
     <div class="image_display">

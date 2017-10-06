@@ -10,7 +10,6 @@
       <p clas="badges">test test</p>
     </div>
   </div>
-  </br>
   <div class="footer-bottom">
     &nbsp
   </div>
