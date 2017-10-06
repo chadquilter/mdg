@@ -12,7 +12,7 @@
                     <center>
                         &nbsp</br>
                         <hr>
-                        <small>Job Created: {{$job->created_at}} By: {{$job->name}} </small>
+                        <small>Job Created: {{$job->created_at}} By: {{$job->user->name}} </small>
                     </center>
                 </div>
             </div>
