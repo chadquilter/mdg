@@ -12,8 +12,8 @@ div.image_display_text_container {
 padding: 10px;
 }
 </style>
-    <div>
-      <img class="image_display" style="width=100%;" alt="A scenic home image" src="/images/scenic-home.jpg">
+    <div class="image_display">
+      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/scenic-home.jpg">
       <div class="image_display_text_container">
         <p>A cut above!</p>
       </div>
