@@ -18,6 +18,7 @@
       <center>
         <image class="footer-badge" height="35" width="120" src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png">
         <image class="footer-badge" height="35" width="120" src="http://texas.raamchallenge.com/userfiles/image/Marble%20Falls%20Chamber%20Logo.png">
+<image class="footer-badge" height="35" width="120" src="http://www.excaliburexhibits.com/blog/wp-content/uploads/2014/08/Inc-5000-300x300.jpg">
         <image class="footer-badge" height="35" width="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Energy_Star_logo.svg/586px-Energy_Star_logo.svg.png">
         <image class="footer-badge" height="35" width="35" src="http://www.indianadesigncenter.com/wp-content/uploads/2013/06/Eco-friendly-logo-1.jpg">
       </center>
