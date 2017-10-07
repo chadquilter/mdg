@@ -17,7 +17,9 @@
     <div class="footer-badges">
       <center>
         <image class="footer-badge" height="35" width="120" src="http://www.souppahomeimprovement.com/wp-content/uploads/2013/05/bbb-icon.png">
-        <image class="footer-badge" height="35" width="120" src="http://texas.raamchallenge.com/userfiles/image/Marble%20Falls%20Chamber%20Logo.png" style="width=20%">
+        <image class="footer-badge" height="35" width="120" src="http://texas.raamchallenge.com/userfiles/image/Marble%20Falls%20Chamber%20Logo.png">
+        <image class="footer-badge" height="35" width="120" src="http://thecustomhomebuilders.com/custom-home-builders.jpg">
+        <image class="footer-badge" height="35" width="120" src="" style="width=20%">
       </center>
       </br>
     </div>
