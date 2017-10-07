@@ -55,8 +55,8 @@
                 @else
                     <h1>No Users Listed!</h1>
                 @endif
-            </div>
-            </br>
+        </div>
+        </br>
         @endif
         {{Form::submit('Submit', ['class=btn btn-primary'])}}
         {!! Form::close() !!}
