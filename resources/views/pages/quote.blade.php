@@ -9,7 +9,7 @@
 	</div>
 	</br>
 	<div class="container">
-		<h1>About</h1>
+		<h1>Send us a Quote!</h1>
         <p>Send us a Quote today!</p>
 	</div>
 @endsection
