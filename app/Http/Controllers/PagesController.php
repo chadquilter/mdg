@@ -13,9 +13,9 @@ class PagesController extends Controller
        return view('pages.index')->with('title', $title);
     }
 
-    public function about(){
+    public function quote(){
        $title = 'Welcome to '.config('app.name');
-       return view('pages.about')->with('title', $title);
+       return view('pages.quote')->with('title', $title);
     }
 
     public function services(){
