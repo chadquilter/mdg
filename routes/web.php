@@ -18,7 +18,7 @@ Route::get('/users/{id}/{name}', function($id, $name) {
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('/quote', 'PagesController@about');
+Route::get('/quote', 'PagesController@quote');
 Route::get('/services', 'PagesController@services');
 Route::resource('jobs', 'JobsController');
 Auth::routes();
