@@ -21,7 +21,7 @@
     </p>
     </br>
     <div class="image_display">
-      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/mdg_images/IMG_0022.jpg">
+      <img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG">
       <div class="image_display_text_container">
         <p>Custom Design!</p>
       </div>
