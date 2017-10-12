@@ -2,7 +2,13 @@
 
 @section('content')
 	<div class="image_display_r">
-		<img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/6_orig.jpg">
+		<img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/mdg_images/IMG_0033.jpg">
+		<div class="image_display_text_container">
+			<p>Our work is a cut above the rest!</p>
+		</div>
+	</div>
+	<div class="image_display_r">
+		<img class="image_for_display" style="width=100%;" alt="A scenic home image" src="/images/mdg_images/IMG_0017.jpg">
 		<div class="image_display_text_container">
 			<p>Our work is a cut above the rest!</p>
 		</div>
