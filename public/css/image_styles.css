@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <style>
   div.image_display {
     width: 640px;
@@ -16,3 +17,24 @@
     background-color: white;
   }
 </style>
+=======
+<style>
+  div.image_display {
+    width: 640px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  div.image_display_r {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  div.image_display_text_container {
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+  }
+</style>
+>>>>>>> 33aa49dc3b1c24c08ae01d0b38992bbc74458747
