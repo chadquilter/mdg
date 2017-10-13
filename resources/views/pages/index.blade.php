@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="image_display_r">
-      <img class="image_for_display" alt="A scenic home image" src="/images/dusk-home.jpg">
+      <img class="image_for_display img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg">
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
       </div>
@@ -21,7 +21,7 @@
     </p>
     </br>
     <div class="image_display">
-      <img class="image_for_display"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG">
+      <img class="image_for_display img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG">
       <div class="image_display_text_container">
         <p>Custom Design!</p>
       </div>
