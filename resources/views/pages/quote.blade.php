@@ -37,7 +37,7 @@
 						{{Form::text('quote_title', '', ['class' => 'form-control', 'placeholder' => 'Quote Title'])}}
 				</div>
 				<div id="app-6" class="form=group">
-						{{Form::label('quote_phone', 'Phone:')}}<p>{{ message }}</p>
+						{{Form::label('quote_phone', 'Phone:')}}
 						{{Form::text('quote_phone', '', ['class' => 'form-control', 'placeholder' => 'Phone', 'v-model' => 'message'])}}
 				</div>
 				<div class="form=group">
