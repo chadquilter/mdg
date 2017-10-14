@@ -2,6 +2,14 @@
 
 
 @section('content')
+	<script>
+					var app6 = new Vue({
+						el: '#app-6',
+							data: {
+							message: 'Phone Number!'
+						}
+					})
+	</script>
 	<div class="row">
 	<div class="col-md-6">
 		<div class="image_display_r">
@@ -48,15 +56,6 @@
 				{!! Form::close() !!}
 				<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 				<script>
-
-				var app6 = new Vue({
-					el: '#app-6',
-						data: {
-						message: 'Phone Number!'
-					}
-				})
-
-
 						CKEDITOR.replace( 'article-ckeditor' );
 				</script>
 	</div>
