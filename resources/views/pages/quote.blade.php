@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('content')
-	<div class="text-center row">
+	<div class="row">
 		<div class="image_display_r col-md-6">
 			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_0033.JPG" style="max-height:450%; width: 100%; display: block;">
 			<div class="image_display_text_container">
