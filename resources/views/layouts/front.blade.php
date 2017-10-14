@@ -12,7 +12,7 @@
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/image_styles.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-
+    <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
     <div id="app">
@@ -25,7 +25,5 @@
         </div>
         @include('inc.footer')
     </div>
-
 </body>
-<script src="{{ asset('js/app.js') }}"></script>
 </html>
