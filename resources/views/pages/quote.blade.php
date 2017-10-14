@@ -7,12 +7,6 @@
 			<p>Our work is a cut above the rest!</p>
 		</div>
 	</div>
-	<div class="image_display_r">
-		<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_0017.JPG" style="max-height:450%; width: 100%; display: block;">
-		<div class="image_display_text_container">
-			<p>Our work is a cut above the rest!</p>
-		</div>
-	</div>
 	</br>
 	<div class="container well">
 		<h1>Create a Quote:</h1>
@@ -39,5 +33,11 @@
 				<script>
 						CKEDITOR.replace( 'article-ckeditor' );
 				</script>
+	</div>
+	<div class="image_display_r">
+		<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_0017.JPG" style="max-height:450%; width: 100%; display: block;">
+		<div class="image_display_text_container">
+			<p>Our work is a cut above the rest!</p>
+		</div>
 	</div>
 @endsection
