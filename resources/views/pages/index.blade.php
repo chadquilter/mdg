@@ -4,7 +4,7 @@
 
     <div class="container">
       <div class="image_display_r">
-        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="height:250%; width: 100%; display: block;">
+        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Our work is a cut above the rest!</p>
         </div>
@@ -21,8 +21,8 @@
         We would love to help you! For a free custom design meeting, contact us today. Let's get started on your new, custom dream home or new addition now!
       </p>
       </br>
-      <div class="image_display">
-        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG">
+      <div class="image_display_r">
+        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG" style="height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Custom Design!</p>
         </div>
