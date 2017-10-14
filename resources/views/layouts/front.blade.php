@@ -27,14 +27,4 @@
     </div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>
-<script>
-        var app6 = new Vue({
-          el: '#app-6',
-            data: {
-            message: 'Phone Number!'
-          }
-        })
-</script>
-
-
 </html>
