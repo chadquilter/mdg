@@ -1,5 +1,6 @@
 @extends('layouts.front')
 
+
 @section('content')
 	<div class="row">
 	<div class="col-md-6">
@@ -27,6 +28,10 @@
 						{{Form::label('quote_title', 'Quote Title:')}}
 						{{Form::text('quote_title', '', ['class' => 'form-control', 'placeholder' => 'Quote Title'])}}
 				</div>
+				<div id="app-6" class="form=group">
+						{{Form::label('quote_phone', 'Phone:')}} {{ message }}
+						{{Form::text('quote_phone', '', ['class' => 'form-control', 'placeholder' => 'Phone', 'v-model' => 'message'])}}
+				</div>
 				<div class="form=group">
 						{{Form::label('quote_email', 'Email:')}}
 						{{Form::text('quote_email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
@@ -43,6 +48,15 @@
 				{!! Form::close() !!}
 				<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 				<script>
+
+				var app6 = new Vue({
+					el: '#app-6',
+						data: {
+						message: 'Phone Number!'
+					}
+				})
+
+
 						CKEDITOR.replace( 'article-ckeditor' );
 				</script>
 	</div>
