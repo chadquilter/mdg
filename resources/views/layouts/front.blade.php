@@ -25,6 +25,7 @@
         </div>
         @include('inc.footer')
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
-<script src="{{ asset('js/app.js') }}"></script>
+
 </html>
