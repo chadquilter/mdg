@@ -4,7 +4,7 @@
 
     <div class="container">
       <div class="image_display_r">
-        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="height:450%; width: 100%; display: block;">
+        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="max-height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Our work is a cut above the rest!</p>
         </div>
@@ -22,7 +22,7 @@
       </p>
       </br>
       <div class="image_display_r">
-        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG" style="height:450%; width: 100%; display: block;">
+        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG" style="max-height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Custom Design!</p>
         </div>
