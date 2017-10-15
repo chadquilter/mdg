@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('content')s
+@section('content')
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
         <div class="form=group">
@@ -56,6 +56,7 @@
         <br>
         @endif
         {{Form::submit('Submit', ['class=btn btn-primary'])}}
+        <br>
         {!! Form::close() !!}
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
