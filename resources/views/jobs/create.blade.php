@@ -55,8 +55,9 @@
         </div>
         <br>
         @endif
-        {{Form::submit('Submit', ['class=btn btn-primary'])}}
-        <br>
+        <div class="page-buttons">
+          {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+        <div>
         {!! Form::close() !!}
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
