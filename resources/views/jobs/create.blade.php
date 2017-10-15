@@ -53,10 +53,11 @@
                     <h1>No Users Listed!</h1>
                 @endif
         </div>
-        <br>
         @endif
         <div class="page-buttons">
-          {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+          <p>
+            {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+          </p>
         <div>
         {!! Form::close() !!}
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
