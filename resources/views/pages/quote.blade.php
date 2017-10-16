@@ -25,7 +25,7 @@
 	<br>
 	<div class="well">
 		<h1>Create a Quote:</h1>
-		{!! Form::open(['action' => 'QuoteController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+		{!! Form::open(['action' => 'QuotController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
 			<div class="form=group">
 					{{Form::label('quote_title', 'Quote Title:')}}
 					{{Form::text('quote_title', '', ['class' => 'form-control', 'placeholder' => 'Quote Title'])}}
