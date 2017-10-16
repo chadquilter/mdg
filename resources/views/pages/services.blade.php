@@ -1,7 +1,6 @@
 @extends('layouts.front')
 
 @section('content')
-	<h1>{{$title}}</h1>
 	<div class="row">
 		<br>
 		<div class="col-md-6">
@@ -23,6 +22,7 @@
 	</div>
 	<br>
 	<div class="service-text well">
+		<h1>{{$title}}</h1>
 		@if(count($services) > 0)
 			<ul>
 				@foreach($services as $service)
