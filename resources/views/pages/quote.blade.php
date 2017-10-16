@@ -45,7 +45,11 @@
 					{{Form::label('quote_notes', 'Quote Notes:')}}
 					{{Form::text('quote_notes', '', ['class' => 'form-control', 'placeholder' => 'Quote Additional Notes'])}}
 			</div>
-			{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+			<div class="form=group">
+				<p>
+					{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+				</p>
+			</div>
 		{!! Form::close() !!}
 		<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 		<script>
