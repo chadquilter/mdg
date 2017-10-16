@@ -45,22 +45,21 @@
 					{{Form::label('quote_notes', 'Quote Notes:')}}
 					{{Form::text('quote_notes', '', ['class' => 'form-control', 'placeholder' => 'Quote Additional Notes'])}}
 			</div>
+			<br>
 			<div class="form=group">
-				<p>
-					{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-				</p>
+				{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
 			</div>
 		{!! Form::close() !!}
 		<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 		<script>
 				CKEDITOR.replace( 'article-ckeditor' );
 		</script>
-		<br>
-		<div class="image_display_r">
-			<img class="img-fluid"  alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:450%; width: 100%; display: block;">
-			<div class="image_display_text_container">
-				<p>Custom Design!</p>
-			</div>
+	</div>
+	<br>
+	<div class="image_display_r">
+		<img class="img-fluid"  alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:450%; width: 100%; display: block;">
+		<div class="image_display_text_container">
+			<p>Custom Design!</p>
 		</div>
 	</div>
 @endsection
