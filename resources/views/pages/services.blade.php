@@ -21,15 +21,18 @@
 		</div>
 	</div>
 	<br>
-	<div class="service-text well">
-		<h1>{{$title}}</h1>
-		@if(count($services) > 0)
+	<div class="well">
+		<div class="service-text">
+			<h1>{{$title}}</h1>
+			@if(count($services) > 0)
 			<ul>
 				@foreach($services as $service)
 					<li>{{$service}}</li>
 				@endforeach
 			</ul>
-		@endif
+			@endif
+		</div>
+		<br>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="image_display_r">

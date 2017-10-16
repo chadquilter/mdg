@@ -26,7 +26,6 @@ class PagesController extends Controller
               'Custom Kitchen and Bath',
               'Construction Management',
               'Excavation',
-              'Civil Construction (storm & sewer lines and domestic & fire water services)',
               'Concrete and Asphalt (structural and paving)',
               'Structural Steel',
               'Interior Finish Out',
