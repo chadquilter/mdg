@@ -62,6 +62,7 @@
 		<div class="image_display_text_container">
 			<p>Custom Design!</p>
 		</div>
+		<br>
 	</div>
 </div>
 @endsection
