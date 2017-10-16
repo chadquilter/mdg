@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</div>
-	</br>
+	<br>
 	<div class="container well">
 		<h1>Create a Quote:</h1>
 		{!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
