@@ -38,8 +38,8 @@
 					{{Form::text('quote_email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
 			</div>
 			<div class="form=group">
-					{{Form::label('quote_summary', 'Summary:')}}
-					{{Form::textarea('quote_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Quote Summary'])}}
+					{{Form::label('job_summary', 'Summary:')}}
+					{{Form::textarea('job_summary', 'Quote Summary Here...', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Summary'])}}
 			</div>
 			<div class="form=group">
 					{{Form::label('quote_notes', 'Quote Notes:')}}
