@@ -29,7 +29,7 @@ class DashboardController extends Controller
         $user = User::find($user_id);
 
         //$jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(4);
-        $jobs = Job::join('users', 'jobs.id', '=', $users_id)
+        $jobs = Job::join('users', 'jobs.id', '=', $user_id)
                 ->orderBy('jobs.created_at', 'desc')
                 ->paginate(15, array('jobs.*'));
 
