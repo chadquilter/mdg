@@ -22,13 +22,13 @@
                     <h3>Your Job Entries:</h3>
                     <table class="table table-striped">
                         <tr>
-                            <th>Title</th>
+                            <th>Sort Order</th>
                             <th></th>
                             <th></th>
                         </tr>
                         @foreach($jobs as $job)
                         <tr>
-                            <td>Job Title:  {{$job->job_title}}</td>
+                            <td><string>Job Title: </strong>{{$job->job_title}}</td>
                             <td><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
@@ -51,7 +51,7 @@
                         </tr>
                         @foreach($jobs as $job)
                         <tr>
-                            <th>{{$job->title}}</th>
+                            <th><strong>Quote Title: </strong>{{$job->job_title}}</th>
                             <th><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></th>
                             <th>
                               {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
