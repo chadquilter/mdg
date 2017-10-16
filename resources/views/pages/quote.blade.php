@@ -57,7 +57,7 @@
 		</script>
 		<br>
 		<div class="image_display_r">
-			<img class="img-fluid"  alt="A scenic home image" src="/images/3_ORIG.JPG" style="max-height:450%; width: 100%; display: block;">
+			<img class="img-fluid"  alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:450%; width: 100%; display: block;">
 			<div class="image_display_text_container">
 				<p>Custom Design!</p>
 			</div>
