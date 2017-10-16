@@ -2,6 +2,7 @@
 
 
 @section('content')
+<div class="container">
 	<div class="row">
 		<br>
 		<div class="col-md-6">
@@ -22,7 +23,7 @@
 		</div>
 	</div>
 	<br>
-	<div class="container well">
+	<div class="well">
 		<h1>Create a Quote:</h1>
 		{!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
 			<div class="form=group">
@@ -62,4 +63,5 @@
 			<p>Custom Design!</p>
 		</div>
 	</div>
+</div>
 @endsection
