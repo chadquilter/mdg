@@ -25,7 +25,7 @@
       </div>
       <br>
       <div class="image_display_r">
-        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG" style="max-height:450%; width: 100%; display: block;">
+        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Custom Design!</p>
         </div>
