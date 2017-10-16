@@ -16,7 +16,6 @@
     </div>
     <div class="footer-badges">
       <center>
-        <img class="footer-badge" height="35" width="120" src="http://texas.raamchallenge.com/userfiles/img/Marble%20Falls%20Chamber%20Logo.png">
         <img class="footer-badge" height="35" width="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Energy_Star_logo.svg/586px-Energy_Star_logo.svg.png">
         <img class="footer-badge" height="35" width="35" src="http://www.indianadesigncenter.com/wp-content/uploads/2013/06/Eco-friendly-logo-1.jpg">
       </center>
