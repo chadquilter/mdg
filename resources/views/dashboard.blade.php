@@ -38,6 +38,7 @@
                             </td>
                         </tr>
                         @endforeach
+                        {{$jobs->links()}}
                     </table>
                     @endif
 
@@ -61,6 +62,7 @@
                             </td>
                         </tr>
                         @endforeach
+                        {{$jobs->links()}}
                     </table>
                     @endif
 
