@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Jobs;
+use App\Job;
 
 class DashboardController extends Controller
 {
