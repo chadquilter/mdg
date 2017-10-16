@@ -21,7 +21,7 @@
         As a Texas custom home builder for over 10 years, we have made thousands of happy customers' dream home a reality by delivering on that promise.
         We would love to help you! For a free custom design meeting, contact us today. Let's get started on your new, custom dream home or new addition now!
       </p>
-      </br>
+      <br>
       <div class="image_display_r">
         <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_0022.JPG" style="max-height:450%; width: 100%; display: block;">
         <div class="image_display_text_container">
@@ -29,5 +29,5 @@
         </div>
       </div>
     </div>
-    </br>
+    <br>
 @endsection
