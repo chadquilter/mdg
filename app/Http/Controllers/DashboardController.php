@@ -28,10 +28,10 @@ class DashboardController extends Controller
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
 
-        $jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(4);
-        //$jobs = Job::join('users', 'jobs.id', '=', $users_id)
-        //        ->orderBy('jobs.created_at', 'desc')
-        //        ->paginate(15, array('jobs.*'));
+        //$jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(4);
+        $jobs = Job::join('users', 'jobs.id', '=', $users_id)
+                ->orderBy('jobs.created_at', 'desc')
+                ->paginate(15, array('jobs.*'));
 
         return view('dashboard')->with('jobs', $user->jobs)->with('user', $user);
     }
