@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<br>
-	<div class="service-text well">
+	<div class="service-text row well">
 	@if(count($services) > 0)
 		<ul>
 		@foreach($services as $service)
@@ -30,9 +30,6 @@
 		@endforeach
 		</ul>
 	@endif
-	<div>
-	<br>
-	<div class="row">
 		<br>
 		<div class="col-md-6">
 			<div class="image_display_r">
