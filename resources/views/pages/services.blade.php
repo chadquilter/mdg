@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<br>
-	<div class="service-text">
+	<div class="service-text well">
 	@if(count($services) > 0)
 		<ul>
 		@foreach($services as $service)
