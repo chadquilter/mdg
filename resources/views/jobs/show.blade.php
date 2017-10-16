@@ -9,11 +9,11 @@
             <p>
                 {!!$job->job_summary!!}
             </p>
-            </br>&nbsp
+            <br>&nbsp
             <p>
                 {{$job->job_notes}}
             </p>
-            </br>
+            <br>
             <p>
                 {{$job->job_status}}
             </p>
@@ -23,11 +23,11 @@
             @if(!Auth::guest())
               @if(Auth::user()->id == $job->user_id)
                 <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a>
-                  {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                    {{Form::hidden('_method', 'DELETE')}}
-                    :<wbr>{{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                  {!!Form::close()!!}
-                </br>
+                {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                  {{Form::hidden('_method', 'DELETE')}}
+                  :<wbr>{{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                {!!Form::close()!!}
+                <br>
               @endif
             @endif
         </div>
@@ -37,6 +37,6 @@
             Please go back to the jobs listing.
         </div>
     @endif
-    </br>
+    <br>
     </div>
 @endsection
