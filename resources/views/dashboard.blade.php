@@ -24,8 +24,6 @@
                       <thead class="thead-default">
                         <tr>
                             <th>Sort</th>
-                            <th></th>
-                            <th></th>
                         </tr>
                       </thead>
                       <tbody>
