@@ -2,6 +2,7 @@
 
 
 @section('content')
+  <div class="container">
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
         <div class="form=group">
@@ -54,6 +55,7 @@
                 @endif
         </div>
         @endif
+        <br>
         <div class="page-buttons">
           <p>
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
@@ -64,4 +66,5 @@
         <script>
             CKEDITOR.replace( 'article-ckeditor' );
         </script>
+      </div>
 @endsection
