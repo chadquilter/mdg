@@ -68,7 +68,7 @@
                         @foreach($quotes as $quote)
                         <tr>
                             <td width=80%><strong>Quote: </strong> {{$quote->title}}</td>
-                            <td><a href="/jobs/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td><a href="/quotes/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
