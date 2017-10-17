@@ -161,42 +161,35 @@ class QuotesController extends Controller
               'title' => 'required',
               'phone' => 'required',
               'email' => 'required',
-              'summary' => 'required'
-              //'cover_image' => 'image|nullable|max:1999'
+              'description' => 'required'
           ]);
 
-  /**
-  *        if($request->hasFile('cover_image')){
-  *          $filenameWithExt = $request->file('cover_image')->getClientOriginalImage();
-  *          //get just filenameWithExt
-  *          $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-  *          //file PATHINFO_FILENAM
-  *          $extension = $request->file('cover_image')->getOriginalClientExtension();
-  *          //file to store
-  *          $filenNameToStore= $filename.'_'.time().'.'.$extension;
-  *          //upload
-  *          $path = $request->file('cover_image')->sotreAs('public/cover_image', $filenNameToStore);
-  *        }
-  */
-          // create quote
-          $quote = Qote::find($id);
-          $quote->quote_title = $request->input('quote_title');
-          $quote->quote_type = $request->input('quote_type');
-          $quote->quote_summary = $request->input('quote_summary');
-          $quote->quote_notes = $request->input('quote_notes');
-          $quote->quote_status = $request->input('quote_status');
-          $quote->quote_modified_by = $request->input('quote_created_by');
-          $quote->quote_created_by = $request->input('quote_created_by');
-          $quote->user_id = $request->input('quote_created_by');
-          $quote->quote_media = $request->input('quote_media');
-          $quote->quote_display = $request->input('quote_display');
-          $quote->quote_account = $request->input('quote_account');
-          $quote->quote_address = $request->input('quote_address');
-          $quote->quote_certs = $request->input('quote_certs');
-          $quote->quote_quote = $request->input('quote_quote');
-          $quote->quote_reciepts = $request->input('quote_reciepts');
-          $quote->quote_invoiced = $request->input('quote_invoiced');
-          $quote->quote_quote = $request->input('quote_quote');
+          $address = ($request->input('address') ? $request->input('address') : 0);
+          $items = ($request->input('items') ? $request->input('items') : 0);
+          $jobs = ($request->input('jobs') ? $request->input('jobs') : 0);
+          $active = ($request->input('active') ? $request->input('active') : 1);
+          $display_web = 1;
+          $identifier = 'Filler TEXT';
+          $guestimate_amount = '1';
+          $current_user = auth()->user()->id;
+
+          // create job
+          $quote = new Quote;
+          $quote->title = $request->input('title');
+          $quote->description = $request->input('description');
+          $quote->identifier = $identifier;
+          $quote->display_web = $display_web;
+          $quote->address = $address;
+          $quote->items = $items;
+          $quote->jobs = $jobs;
+          $quote->active = $active;
+          $quote->guestimate_amount = $guestimate_amount;
+          $quote->user_id = $current_user;
+          $quote->created_by = $current_user;
+          $quote->modified_by = $current_user;
+          $quote->phone = $request->input('phone');
+          $quote->email = $request->input('email');
+          $quote->notes = $request->input('notes');
           $quote->save();
 
           return redirect('/dashboard')->with('success', 'Quote has been Updated');
