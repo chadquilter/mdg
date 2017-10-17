@@ -65,16 +65,21 @@ class QuotesController extends Controller
               'summary' => 'required'
           ]);
 
+          $address = ($request->input('address') ? $request->input('address') : 0);
+          $items = ($request->input('items') ? $request->input('items') : 0);
+          $jobs = ($request->input('jobs') ? $request->input('jobs') : 0);
+          $active = ($request->input('active') ? $request->input('active') : 1);
+
           // create job
           $quote = new Quote;
           $quote->title = $request->input('title');
           $quote->description = $request->input('description');
           $quote->summary = $request->input('summary');
           $quote->display_web = $request->input('display_web');
-          $quote->address = ($request->input('address') =! '' ? $request->input('address') : 0);
-          $quote->items = ($request->input('items') =! '' ? $request->input('items') : 0);
-          $quote->jobs = ($request->input('jobs') =! '' ? $request->input('jobs') : 0);
-          $quote->active = ($request->input('active') =! '' ? $request->input('active') : 1);
+          $quote->address = $address;
+          $quote->items = $items;
+          $quote->jobs = $jobs;
+          $quote->active = $active;
           $quote->phone = $request->input('phone');
           $quote->email = $request->input('email');
           $quote->notes = $request->input('notes');
