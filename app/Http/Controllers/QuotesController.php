@@ -18,6 +18,20 @@ class QuotesController extends Controller
       }
 
       /**
+       * Display a listing of the resource.
+       *
+       * @return \Illuminate\Http\Response
+       */
+      public function index()
+      {
+          //$jobs = Job::all(); get all
+          //use db to do custom sql instead
+          //$jobs = Job::orderBy('created_at', 'job_desc')->get();
+          //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
+          return view('quotes.create');
+      }
+
+      /**
        * Show the form for creating a new resource.
        *
        * @return \Illuminate\Http\Response
