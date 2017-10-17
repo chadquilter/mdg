@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Quote;
+use App\User;
 
 class QuotesController extends Controller
 {
