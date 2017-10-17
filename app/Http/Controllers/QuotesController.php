@@ -88,6 +88,8 @@ class QuotesController extends Controller
           $quote->active = $active;
           $quote->guestimate_amount = $guestimate_amount;
           $quote->user_id = $current_user;
+          $quote->created_by = $current_user;
+          $quote->modified_by = $current_user;
           $quote->phone = $request->input('phone');
           $quote->email = $request->input('email');
           $quote->notes = $request->input('notes');
