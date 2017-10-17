@@ -87,7 +87,7 @@ class QuotesController extends Controller
           $quote->jobs = $jobs;
           $quote->active = $active;
           $quote->guestimate_amount = $guestimate_amount;
-          $quote->user_id = $current_user
+          $quote->user_id = $current_user;
           $quote->phone = $request->input('phone');
           $quote->email = $request->input('email');
           $quote->notes = $request->input('notes');
