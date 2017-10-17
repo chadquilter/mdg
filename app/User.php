@@ -18,8 +18,8 @@ class User extends Authenticatable
     public $timestamps = true;
 
     public $fillable = [
-        'name', 
-        'email', 
+        'name',
+        'email',
         'password',
         'user_employee',
         'user_web_admin',
@@ -48,5 +48,9 @@ class User extends Authenticatable
 
     public function jobs(){
         return $this->hasMany('App\Job');
+    }
+
+    public function quotes(){
+      return $this->hasMany('App\Quote');
     }
 }
