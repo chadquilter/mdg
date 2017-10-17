@@ -27,24 +27,24 @@
   		<h1>Create a Quote:</h1>
   		{!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
   			<div class="form=group">
-  					{{Form::label('quote_title', 'Quote Title:')}}
-  					{{Form::text('quote_title', '', ['class' => 'form-control', 'placeholder' => 'Quote Title'])}}
+  					{{Form::label('title', 'Title:')}}
+  					{{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
   			</div>
   			<div id="app-6" class="form=group">
-  					{{Form::label('quote_phone', 'Phone:')}}
-  					{{Form::text('quote_phone', '', ['class' => 'form-control', 'placeholder' => 'Phone'])}}
+  					{{Form::label('phone', 'Phone:')}}
+  					{{Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'Phone'])}}
   			</div>
   			<div class="form=group">
-  					{{Form::label('quote_email', 'Email:')}}
-  					{{Form::text('quote_email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
+  					{{Form::label('email', 'Email:')}}
+  					{{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
   			</div>
   			<div class="form=group">
-  					{{Form::label('job_summary', 'Summary:')}}
-  					{{Form::textarea('job_summary', 'Quote Summary Here...', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Summary'])}}
+  					{{Form::label('summary', 'Summary:')}}
+  					{{Form::textarea('summary', 'Quote Summary Here...', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Summary'])}}
   			</div>
   			<div class="form=group">
-  					{{Form::label('quote_notes', 'Quote Notes:')}}
-  					{{Form::text('quote_notes', '', ['class' => 'form-control', 'placeholder' => 'Quote Additional Notes'])}}
+  					{{Form::label('notes', 'Notes:')}}
+  					{{Form::text('notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Notes'])}}
   			</div>
   			<br>
   			<div class="form=group">

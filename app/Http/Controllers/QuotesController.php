@@ -71,10 +71,10 @@ class QuotesController extends Controller
           $quote->description = $request->input('description');
           $quote->summary = $request->input('summary');
           $quote->display_web = $request->input('display_web');
-          $quote->address = $request->input('address');
-          $quote->items = $request->input('items');
-          $quote->jobs = $request->input('jobs');
-          $quote->active = $request->input('active');
+          $quote->address = $request->input('address') ne '' ? $request->input('address') : 0;
+          $quote->items = $request->input('items') ne '' ? $request->input('items') : 0;
+          $quote->jobs = $request->input('jobs') ne '' ? $request->input('jobs') : 0;
+          $quote->active = $request->input('active') ne '' ?$request->input('active') : 1;
           $quote->phone = $request->input('phone');
           $quote->email = $request->input('email');
           $quote->notes = $request->input('notes');
