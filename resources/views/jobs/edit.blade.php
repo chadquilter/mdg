@@ -53,7 +53,6 @@
                     <h1>No Users Listed!</h1>
                 @endif
             </div>
-            <br>
         @endif
         <br>
         <div>

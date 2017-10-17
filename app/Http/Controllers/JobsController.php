@@ -110,7 +110,7 @@ class JobsController extends Controller
         $job->job_quote = $request->input('job_quote');
         $job->save();
 
-        return redirect('/jobs')->with('success', 'Job Created');
+        return redirect('/dashboard')->with('success', 'Job Created');
 
     }
 
@@ -163,7 +163,7 @@ class JobsController extends Controller
         $job = Job::find($id);
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
-          return redirect('/jobs')->with('error', 'Unauthorized Page!');
+          return redirect('/dashboard')->with('error', 'Unauthorized Page!');
         }
 
         //edit view
@@ -222,7 +222,7 @@ class JobsController extends Controller
         $job->job_quote = $request->input('job_quote');
         $job->save();
 
-        return redirect('/jobs')->with('success', 'Job Updated');
+        return redirect('/dashboard')->with('success', 'Job Updated');
     }
 
     /**
@@ -241,6 +241,6 @@ class JobsController extends Controller
         }
 
         $job->delete();
-        return redirect('/dashboard')->with('success', 'Post Deleted');
+        return redirect('/dashboard')->with('success', 'Job Deleted');
     }
 }
