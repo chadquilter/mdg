@@ -237,10 +237,10 @@ class JobsController extends Controller
         $job = Job::find($id);
         //authorized?
         if(auth()->user()->id !==$job->user_id) {
-          return redirect('/jobs')->with('error', 'Unauthorized Page!');
+          return redirect('/login')->with('error', 'Unauthorized Page!');
         }
 
         $job->delete();
-        return redirect('/jobs')->with('success', 'Post Deleted');
+        return redirect('/dashboard')->with('success', 'Post Deleted');
     }
 }

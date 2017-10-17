@@ -95,8 +95,11 @@ class QuotesController extends Controller
           $quote->notes = $request->input('notes');
           $quote->save();
 
-          return redirect('/quote')->with('success', 'Quote Sent! A representitive will contact you with further details.');
-
+          if ( $current_user != 1) {
+            return redirect('/dashboard')->with('success', 'Quote Created! Quote has been emailed and saved.');
+          }else{
+            return redirect('/quote')->with('success', 'Quote Sent! A representitive will contact you with further details.');
+          }
       }
 
       /**
@@ -107,8 +110,8 @@ class QuotesController extends Controller
        */
       public function show($id)
       {
-          $job = Job::find($id);
-          return view('jobs.show')->with('job', $job);
+          $quote = Quote::find($id);
+          return view('quote.show')->with('quote', $quote);
       }
 
       /**
@@ -134,10 +137,10 @@ class QuotesController extends Controller
           $users = User::pluck('name', 'id');
 
           //////
-          $quote = Qote::find($id);
+          $quote = Quote::find($id);
           //check for auth
           if(auth()->user()->id) {
-            return redirect('/quote')->with('error', 'Unauthorized Page!');
+            return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
           //edit view
@@ -196,7 +199,7 @@ class QuotesController extends Controller
           $quote->quote_quote = $request->input('quote_quote');
           $quote->save();
 
-          return redirect('/quote')->with('success', 'Job Updated');
+          return redirect('/dashboard')->with('success', 'Quote has been Updated');
       }
 
       /**
