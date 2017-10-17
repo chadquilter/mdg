@@ -11,11 +11,11 @@
     </div>
     <div class="form=group">
         {{Form::label('job_summary', 'Summary:')}}
-        {{Form::textarea('job_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Summary'])}}
+        {{Form::textarea('job_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Job Summary'])}}
     </div>
     <div class="form=group">
         {{Form::label('job_notes', 'Notes:')}}
-        {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
+        {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Job Notes'])}}
     </div>
     <div class="form=group">
       {{Form::label('job_type', 'Job Type:')}}
