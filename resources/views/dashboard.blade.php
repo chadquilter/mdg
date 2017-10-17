@@ -54,12 +54,12 @@
                             <th></th>
                             <th></th>
                         </tr>
-                        @foreach($jobs as $job)
+                        @foreach($quotes as $quote)
                         <tr>
-                            <td><strong>Quote: </strong> {{$job->job_title}}</td>
-                            <td><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td><strong>Quote: </strong> {{$quote->title}}</td>
+                            <td><a href="/jobs/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
-                              {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                              {!!Form::open(['action' => ['JobsController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
                                   {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                               {!!Form::close()!!}
@@ -68,7 +68,7 @@
                         @endforeach
                         <tr>
                           <td>
-                            {{$jobs->links()}}
+                            {{$quotes->links()}}
                           </td>
                         </tr>
                     </table>
