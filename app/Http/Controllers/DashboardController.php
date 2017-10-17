@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Job;
+use App\Quote;
 
 class DashboardController extends Controller
 {
