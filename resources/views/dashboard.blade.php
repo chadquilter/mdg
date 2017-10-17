@@ -58,7 +58,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
                         <tr>
-                            <th><h3>Your Quote Entries:</h3></th>
+                            <th><h3>Quote Entries:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
