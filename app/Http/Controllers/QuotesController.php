@@ -71,7 +71,7 @@ class QuotesController extends Controller
           $items = ($request->input('items') ? $request->input('items') : 0);
           $jobs = ($request->input('jobs') ? $request->input('jobs') : 0);
           $active = ($request->input('active') ? $request->input('active') : 1);
-          $display_web = 0;
+          $display_web = 1;
           $identifier = 'Filler TEXT';
 
           // create job
