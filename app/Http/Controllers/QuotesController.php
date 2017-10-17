@@ -137,7 +137,7 @@ class QuotesController extends Controller
           $users = User::pluck('name', 'id');
 
           //////
-          $quote = Quote::find($id);
+          $quote = Quote::find(10);
           //check for auth
           if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
