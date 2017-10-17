@@ -44,10 +44,11 @@
                       </tbody>
                       <tfoot>
                         <tr>
+                          <td></td>
                           <td>
                             {{$jobs->links()}}
                           </td>
-                          <td></td><td></td>
+                          <td></td>
                         </tr>
                       </tfoot>
                     </table>
@@ -79,10 +80,9 @@
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td>
-                            {{$quotes->links()}}
-                          </td>
-                          <td></td><td></td>
+                          <td></td>
+                          <td>{{$quotes->links()}}</td>
+                          <td></td>
                         </tr>
                       </tfoot>
                     </table>
