@@ -65,4 +65,5 @@
       CKEDITOR.replace( 'article-ckeditor' );
     </script>
   </div>
+  <br>
 @endsection
