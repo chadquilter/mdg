@@ -40,16 +40,7 @@ class QuotesController extends Controller
        */
       public function create()
       {
-
-          $bool_types = array(
-              1 => 'Yes',
-              0 => 'No');
-
-          $users = User::pluck('name', 'id');
-          $current_user = auth()->user()->id;
-
-          return view('quote.create')
-              ->with(compact('bool_types', 'users', 'current_user'));
+          return view('quote.create');
       }
 
       /**
