@@ -144,7 +144,7 @@ class QuotesController extends Controller
           }
 
           //edit view
-          return view('quotes.edit')->with(compact('users'));
+          return view('quotes.edit')->with(compact('users', 'quote'));
       }
 
       /**
