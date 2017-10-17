@@ -39,6 +39,6 @@ class DashboardController extends Controller
                 ->orderBy('jobs.created_at', 'desc')
                 ->paginate(3, array('quotes.*'));
 
-        return view('dashboard')->with('jobs', $jobs)->with('user', $user)->('quotes', $quotes);
+        return view('dashboard')->with('jobs', $jobs)->with('user', $user)->with('quotes', $quotes);
     }
 }
