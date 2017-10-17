@@ -26,6 +26,7 @@
       </div>
       <br>
       <div class="form=group">
+        {{Form::hidden('_method', 'PUT')}}
         {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
       </div>
     {!! Form::close() !!}
