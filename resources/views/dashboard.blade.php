@@ -70,7 +70,7 @@
                             <td width=80%><strong>Quote: </strong> {{$quote->title}}</td>
                             <td><a href="/jobs/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
-                              {!!Form::open(['action' => ['QuoteController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                              {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
                                   {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                               {!!Form::close()!!}
