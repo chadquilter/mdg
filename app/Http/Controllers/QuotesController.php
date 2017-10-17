@@ -86,7 +86,7 @@ class QuotesController extends Controller
           $quote->notes = $request->input('notes');
           $quote->save();
 
-          return redirect('/quote')->with('success', 'Quote Sent! A representitive will contact you with further details.');
+          return redirect('/quotes')->with('success', 'Quote Sent! A representitive will contact you with further details.');
       }
 
       /**
