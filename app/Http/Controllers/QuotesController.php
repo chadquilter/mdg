@@ -64,7 +64,7 @@ class QuotesController extends Controller
               'title' => 'required',
               'phone' => 'required',
               'email' => 'required',
-              'summary' => 'required'
+              'description' => 'required'
           ]);
 
           $address = ($request->input('address') ? $request->input('address') : 0);
@@ -76,7 +76,6 @@ class QuotesController extends Controller
           $quote = new Quote;
           $quote->title = $request->input('title');
           $quote->description = $request->input('description');
-          $quote->summary = $request->input('summary');
           $quote->display_web = $request->input('display_web');
           $quote->address = $address;
           $quote->items = $items;

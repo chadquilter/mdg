@@ -39,8 +39,8 @@
   					{{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
   			</div>
   			<div class="form=group">
-  					{{Form::label('summary', 'Summary:')}}
-  					{{Form::textarea('summary', 'Quote Summary Here...', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Summary'])}}
+  					{{Form::label('description', 'description:')}}
+  					{{Form::textarea('description', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Quote Description'])}}
   			</div>
   			<div class="form=group">
   					{{Form::label('notes', 'Notes:')}}
