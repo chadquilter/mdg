@@ -33,9 +33,9 @@ class DashboardController extends Controller
         $jobs = Job::join('users', 'jobs.user_id', '=', 'id')
                 ->where('user_id', '=', $user_id)
                 ->orderBy('jobs.created_at', 'desc')
-                ->paginate(3, array('jobs.*'));
+                ->paginate(3, array('jobs.*'), 'jobs');
 
-        $quotes = Quote::orderBy('created_at', 'desc', 'title')->paginate(4);
+        $quotes = Quote::orderBy('created_at', 'desc', 'title')->paginate(4, ['*'], 'quotes');
 
         return view('dashboard')->with('jobs', $jobs)->with('user', $user)->with('quotes', $quotes);
     }
