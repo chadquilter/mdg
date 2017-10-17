@@ -52,12 +52,15 @@
 
                     @if(count($jobs) > 0)
                     <h3>Your Quote Entries:</h3>
-                    <table class="table table-striped table-inverse table-bordered table-hover">
+                    <table class="table table-striped table-hover table-sm table-responsive">
+                        <thead class="thead-inverse">
                         <tr>
                             <th>Sort</th>
                             <th></th>
                             <th></th>
                         </tr>
+                      </thead>
+                      <tbody>
                         @foreach($quotes as $quote)
                         <tr>
                             <td><strong>Quote: </strong> {{$quote->title}}</td>
@@ -70,11 +73,14 @@
                             </td>
                         </tr>
                         @endforeach
+                      </tbody>
+                      <tfoot>
                         <tr>
                           <td>
                             {{$quotes->links()}}
                           </td>
                         </tr>
+                      </tfoot>
                     </table>
                     @endif
 
