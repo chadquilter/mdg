@@ -21,11 +21,14 @@
                     @if(count($jobs) > 0)
                     <h3>Your Job Entries:</h3>
                     <table class="table table-striped table-inverse table-bordered table-hover">
+                      <thead>
                         <tr>
                             <th>Sort</th>
                             <th></th>
                             <th></th>
                         </tr>
+                      </thead>
+                      <tbody>
                         @foreach($jobs as $job)
                         <tr>
                             <td><strong>Job: </strong>{{$job->job_title}}</td>
@@ -43,6 +46,7 @@
                             {{$jobs->links()}}
                           </td>
                         </tr>
+                      </tbody>
                     </table>
                     @endif
 
