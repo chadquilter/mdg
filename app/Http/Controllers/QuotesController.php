@@ -95,7 +95,7 @@ class QuotesController extends Controller
           $quote->notes = $request->input('notes');
           $quote->save();
 
-          if ( $current_user != 1) {
+          if (auth()->user()->id) {
             return redirect('/dashboard')->with('success', 'Quote Created! Quote has been emailed and saved.');
           }else{
             return redirect('/quote')->with('success', 'Quote Sent! A representitive will contact you with further details.');
@@ -139,7 +139,7 @@ class QuotesController extends Controller
           //////
           $quote = Quote::find($id);
           //check for auth
-          if(auth()->user()->id) {
+          if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
