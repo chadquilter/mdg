@@ -20,8 +20,8 @@
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
                     @if(count($jobs) > 0)
                     <h3>Your Job Entries:</h3>
-                    <table class="table table-striped table-inverse table-bordered table-hover">
-                      <thead>
+                    <table class="table table-striped table-hover table-bordered table-sm table-responsive">
+                      <thead class="thead-default">
                         <tr>
                             <th>Sort</th>
                             <th></th>
@@ -41,12 +41,14 @@
                             </td>
                         </tr>
                         @endforeach
+                      </tbody>
+                      <tfoot>
                         <tr>
                           <td>
                             {{$jobs->links()}}
                           </td>
                         </tr>
-                      </tbody>
+                      </tfoot>
                     </table>
                     @endif
 
