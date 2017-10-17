@@ -213,7 +213,7 @@ class QuotesController extends Controller
 
           $quote = Quote::find($id);
           //authorized?
-          if(auth()->user()->id !==$quote->user_id) {
+          if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
