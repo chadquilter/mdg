@@ -35,7 +35,7 @@ class DashboardController extends Controller
                 ->orderBy('jobs.created_at', 'desc')
                 ->paginate(3, array('jobs.*'));
 
-        $quotes = Job::join('users', 'quotes.user_id', '=', 'id')
+        $quotes = Quote::join('users', 'quotes.user_id', '=', 'id')
                 ->orderBy('quotes.created_at', 'desc')
                 ->paginate(3, array('quotes.*'));
 
