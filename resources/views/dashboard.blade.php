@@ -21,7 +21,7 @@
                     @if(count($jobs) > 0)
                     <h3>Your Job Entries:</h3>
                     <table class="table table-striped table-hover table-bordered table-sm table-responsive">
-                      <thead class="thead-default">
+                      <thead class="thead-inverse">
                         <tr>
                             <th>Sort</th>
                         </tr>
