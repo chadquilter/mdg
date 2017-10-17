@@ -24,6 +24,8 @@
                       <thead class="thead-inverse">
                         <tr>
                             <th>Sort</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -79,6 +81,7 @@
                           <td>
                             {{$quotes->links()}}
                           </td>
+                          <td></td><td></td>
                         </tr>
                       </tfoot>
                     </table>
