@@ -65,7 +65,7 @@ class QuotesController extends Controller
           $display_web = 1;
           $identifier = 'Filler TEXT';
           $guestimate_amount = '1';
-          $current_user = auth()->user()->id ? auth()->user()->id : '1';
+          $current_user = '1';
 
           // create job
           $quote = new Quote;
