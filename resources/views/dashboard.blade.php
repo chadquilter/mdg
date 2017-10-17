@@ -20,7 +20,7 @@
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
                     @if(count($jobs) > 0)
                     <h3>Your Job Entries:</h3>
-                    <table class="table table-striped">
+                    <table class="table table-striped table-inverse table-bordered table-hover">
                         <tr>
                             <th>Sort</th>
                             <th></th>
@@ -48,7 +48,7 @@
 
                     @if(count($jobs) > 0)
                     <h3>Your Quote Entries:</h3>
-                    <table class="table table-striped">
+                    <table class="table table-striped table-inverse table-bordered table-hover">
                         <tr>
                             <th>Sort</th>
                             <th></th>
