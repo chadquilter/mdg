@@ -67,7 +67,9 @@
                       <tbody>
                         @foreach($quotes as $quote)
                         <tr>
-                            <td><strong>Quote: </strong> {{$quote->title}}</td>
+                            <td width=80%:@while ($condition)
+
+                            @endwhile><strong>Quote: </strong> {{$quote->title}}</td>
                             <td><a href="/jobs/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['JobsController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
