@@ -54,7 +54,7 @@
                     </table>
                     @endif
 
-                    @if(count($jobs) > 0)
+                    @if(count($quotes) > 0)
                     <h3>Your Quote Entries:</h3>
                     <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
