@@ -40,7 +40,7 @@ class QuotesController extends Controller
        */
       public function create()
       {
-          return view('quote.create');
+          return view('quotes.create');
       }
 
       /**
@@ -98,7 +98,7 @@ class QuotesController extends Controller
       public function show($id)
       {
           $quote = Quote::find($id);
-          return view('quote.show')->with('quote', $quote);
+          return view('quotes.show')->with('quote', $quote);
       }
 
       /**

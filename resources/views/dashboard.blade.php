@@ -15,7 +15,7 @@
                     @endif
 
                     <a href="/jobs/create" class="btn btn-primary">Create Job</a>
-                    <a href="/quotes/create" class="btn btn-success">Create Quote</a>
+                    <a href="/quotes" class="btn btn-success">Create Quote</a>
                     <a href="/address/create" class="btn btn-warning">Add Address</a>
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
                     @if(count($jobs) > 0)
