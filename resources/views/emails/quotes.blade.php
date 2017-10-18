@@ -1,24 +1,21 @@
 <div>
-  <h1>Quote Recieved: {{ $quoteDate }}</h1>
+  <h1>Quote Recieved:</h1>
   <br>
+  <h2>Date:{{ $quoteDate }}</h2>
   <hr>
   <div>
     <strong>Title: </strong> {{ $quoteTitle }}
-  </div>
-  <br>
-  <div>
+    <br>
     <strong>Phone: </strong> {{ $quotePhone }}
-  </div>
-  <br>
-  <div>
+    <br>
     <strong>Email: </strong> {{ $quoteEmail }}
   </div>
   <br>
-  <hr>
   <div>
-    <strong>Description: </strong> {!! $quoteDescription !!}
+    <strong>Description: </strong>
+    <hr>
+    {!! $quoteDescription !!}
   </div>
-  <br>
   <hr>
   <div>
     <strong>Notes: </strong> {{ $quoteNotes }}
