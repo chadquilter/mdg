@@ -79,8 +79,8 @@
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td></td>
                           <td>{{$quotes->links()}}</td>
+                          <td></td>
                           <td></td>
                         </tr>
                       </tfoot>
