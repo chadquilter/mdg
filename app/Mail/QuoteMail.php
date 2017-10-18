@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-#use App\Quote;
+use App\Quote;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -17,11 +17,11 @@ class QuoteMail extends Mailable
      *
      * @return void
      */
-    #public $quote;
+    public $quote;
 
-    public function __construct()
+    public function __construct(Quote, $quote)
     {
-        #$this->quote = $quote;
+        $this->quote = $quote;
     }
 
     /**
@@ -33,7 +33,7 @@ class QuoteMail extends Mailable
     {
         return $this->view('emails.quote')
             ->with([
-                'quoteTitle' => 'This is a test email',
+                'quoteTitle' => $quote->title,
                 'quoteDescription' => 'sent from cut above construction55, hows it going?',
             ]);
     }
