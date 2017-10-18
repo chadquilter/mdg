@@ -1,10 +1,10 @@
 <div>
   <h1>Quote Recieved:</h1>
-  <br>
-  <h2>Date:{{ $quoteDate }}</h2>
   <hr>
   <div>
     <strong>Title: </strong> {{ $quoteTitle }}
+    <br>
+    <h2>Date: {{ $quoteDate }}</h2>
     <br>
     <strong>Phone: </strong> {{ $quotePhone }}
     <br>
