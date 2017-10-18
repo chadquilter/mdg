@@ -34,7 +34,10 @@ class QuoteMail extends Mailable
         return $this->view('emails.quotes')
             ->with([
                 'quoteTitle' => $this->quote->title,
-                'quoteDescription' => 'sent from cut above construction55, hows it going?',
+                'quoteDescription' => $this->quote->phone,
+                'quoteDescription' => $this->quote->email,
+                'quoteDescription' => $this->quote->description,
+                'quoteDescription' => $this->quote->notes,
             ]);
     }
 }
