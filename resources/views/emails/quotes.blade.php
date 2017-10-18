@@ -1,8 +1,11 @@
 <div>
-  <h1>Quote Recieved!:</h1>
+  <h1>Quote Recieved:</h1>
+  <br>
+  <hr>
   <div>
     <strong>Title: </strong> {{ $quoteTitle }}
   </div>
+  <hr>
   <br>
   <div>
     <strong>Phone: </strong> {{ $quotePhone }}
@@ -16,6 +19,7 @@
     <strong>Description: </strong> {!! $quoteDescription !!}
   </div>
   <br>
+  <hr>
   <div>
     <strong>Notes: </strong> {{ $quoteNotes }}
   </div>
