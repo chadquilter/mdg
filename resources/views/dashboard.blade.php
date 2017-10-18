@@ -44,10 +44,10 @@
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td></td>
                           <td>
                             {{$jobs->links()}}
                           </td>
+                          <td></td>
                           <td></td>
                         </tr>
                       </tfoot>
