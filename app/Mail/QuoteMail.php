@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-use App\Quote;
+#use App\Quote;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -17,11 +17,11 @@ class QuoteMail extends Mailable
      *
      * @return void
      */
-    public $quote;
+    #public $quote;
 
-    public function __construct(Quote $quote)
+    public function __construct()
     {
-        $this->quote = $quote;
+        #$this->quote = $quote;
     }
 
     /**
