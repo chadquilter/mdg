@@ -15,7 +15,7 @@
                     @endif
 
                     <a href="/jobs/create" class="btn btn-primary">Create Job</a>
-                    <a href="/quote" class="btn btn-success">Create Quote</a>
+                    <a href="/quotes/create" class="btn btn-success">Create Quote</a>
                     <a href="/address/create" class="btn btn-warning">Add Address</a>
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
                     @if(count($jobs) > 0)
@@ -23,7 +23,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                       <thead class="thead-inverse">
                         <tr>
-                            <th><h3>Your Job Entries:</h3></th>
+                            <th><h3>Job Entries:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
