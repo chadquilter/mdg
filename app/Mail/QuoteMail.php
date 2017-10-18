@@ -33,7 +33,7 @@ class QuoteMail extends Mailable
     public function build()
     {
 
-        $quote_date = Carbon::now()->toDateTimeString()
+        $quote_date = Carbon::now()->toDateTimeString();
         return $this->view('emails.quotes')
             ->with([
                 'quoteTitle' => $this->quote->title,
