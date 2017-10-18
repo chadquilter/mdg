@@ -19,7 +19,7 @@ class QuoteMail extends Mailable
      */
     public $quote;
 
-    public function __construct(Quote, $quote)
+    public function __construct(Quote $quote)
     {
         $this->quote = $quote;
     }
