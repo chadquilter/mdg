@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'admin@cutaboveconstruction55.com'),
+        'address' => env('MAIL_FROM_ADDRESS', '-fadmin@cutaboveconstruction55.com'),
         'name' => env('MAIL_FROM_NAME', 'Cut Above Construction'),
     ],
 
