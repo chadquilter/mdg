@@ -7,6 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Carbon\Carbon;
 
 class QuoteMail extends Mailable
 {
@@ -31,6 +32,8 @@ class QuoteMail extends Mailable
      */
     public function build()
     {
+
+        $quote_date = Carbon::now()->toDateTimeString()
         return $this->view('emails.quotes')
             ->with([
                 'quoteTitle' => $this->quote->title,
@@ -38,6 +41,7 @@ class QuoteMail extends Mailable
                 'quoteEmail' => $this->quote->email,
                 'quoteDescription' => $this->quote->description,
                 'quoteNotes' => $this->quote->notes,
+                'quotDate' => $quote_date,
             ]);
     }
 }
