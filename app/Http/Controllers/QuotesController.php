@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Quote;
 use App\User;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\QuoteMail;
 
 class QuotesController extends Controller
 {
@@ -85,6 +87,8 @@ class QuotesController extends Controller
           $quote->email = $request->input('email');
           $quote->notes = $request->input('notes');
           $quote->save();
+
+          Mail::send(new QuoteMail('1'));
 
           return redirect('/quotes')->with('success', 'Quote Sent! A representitive will contact you with further details.');
       }
