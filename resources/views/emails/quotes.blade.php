@@ -2,9 +2,9 @@
   <h1>Quote Recieved:</h1>
   <hr>
   <div>
-    <strong>Title: </strong> {{ $quoteTitle }}
+    <strong>Name: </strong> {{ $quoteTitle }}
     <br>
-    <string>Date: </strong> {{ $quoteDate }}
+    <strong>Date: </strong> {{ $quoteDate }}
     <br>
     <strong>Phone: </strong> {{ $quotePhone }}
     <br>
