@@ -2,7 +2,8 @@
 
 
 @section('content')
-  <div class="container">
+  <br>
+  <div class="well">
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">

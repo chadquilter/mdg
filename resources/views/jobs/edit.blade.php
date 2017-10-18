@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  <div class="well">
     <h1>Edit Job</h1>
     {!! Form::open(['action' => ['JobsController@update', $job->job_id], 'method' => 'POST']) !!}
         <div class="form=group">
@@ -64,5 +65,6 @@
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
-    <br>
+  </div>
+  <br>
 @endsection
