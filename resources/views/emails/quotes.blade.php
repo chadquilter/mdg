@@ -4,7 +4,7 @@
   <div>
     <strong>Title: </strong> {{ $quoteTitle }}
     <br>
-    <h2>Date: {{ $quoteDate }}</h2>
+    <string>Date: </strong> {{ $quoteDate }}
     <br>
     <strong>Phone: </strong> {{ $quotePhone }}
     <br>
