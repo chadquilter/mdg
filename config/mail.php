@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', '-fadmin@cutaboveconstruction55.com'),
-        'name' => env('MAIL_FROM_NAME', 'Cut Above Construction'),
+        'name' => env('MAIL_FROM_NAME', 'Recieved Quote from Cut Above Construction'),
     ],
 
     /*
