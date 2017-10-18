@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  <br>
   <div class="well">
     <h1>Edit Quote</h1>
     {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
