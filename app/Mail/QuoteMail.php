@@ -41,7 +41,7 @@ class QuoteMail extends Mailable
                 'quoteEmail' => $this->quote->email,
                 'quoteDescription' => $this->quote->description,
                 'quoteNotes' => $this->quote->notes,
-                'quotDate' => $quote_date,
+                'quoteDate' => $quote_date,
             ]);
     }
 }
