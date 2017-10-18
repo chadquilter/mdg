@@ -13,7 +13,7 @@
   </div>
   <br>
   <div>
-    <strong>Description: </strong> {{ !$quoteDescription }}
+    <strong>Description: </strong> {!! $quoteDescription !!}
   </div>
   <br>
   <div>
