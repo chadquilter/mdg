@@ -135,7 +135,7 @@ class QuotesController extends Controller
           }
 
           //edit view
-          return view('quotes.edit')->with(compact('users', 'quote'));
+          return redirect('/dashboard')->with('success', 'Quote has been Updated');
       }
 
       /**
