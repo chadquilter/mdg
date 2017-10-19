@@ -4,7 +4,7 @@
   <br>
   <div class="well">
     <h1>Edit Quote</h1>
-    {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+    {!! Form::open(['action' => 'QuotesController@update', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
       <div class="form=group">
           {{Form::label('title', 'Title:')}}
           {{Form::text('title', $quote->title, ['class' => 'form-control', 'placeholder' => 'Title'])}}
