@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Jobs</h1>
+  <br>
+  <center>
+  <div>
     @if(count($jobs) > 0)
         @foreach($jobs as $job)
             <div class="well">
@@ -21,4 +23,6 @@
     @else
         <p>No jobs found</p>
     @endif
+  </div>
+</center>
 @endsection
