@@ -1,5 +1,5 @@
 
-         <nav class="navbar navbar-inverse" style="min-height:100px !important; max-height:100px !important">
+         <nav class="navbar navbar-inverse" style="min-height:90px !important; max-height:90px !important">
                  <div class="navbar-header">
                      <!-- Collapsed Hamburger -->
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
