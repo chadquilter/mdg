@@ -21,7 +21,9 @@
         @endforeach
         {{$jobs->links()}}
     @else
+      <div class="well">
         <p>No jobs found</p>
+      </div>
     @endif
   </div>
 </center>
