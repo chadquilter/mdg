@@ -11,8 +11,8 @@
 
                      <!-- Branding Image -->
                      <a class="navbar-brand" href="{{ url('/') }}">
-                         {{ config('app.name', 'MDG') }}
-                     </a>
+                        <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
+                    </a>
                  </div>
                  <div class="collapse navbar-collapse" id="app-navbar-collapse">
                      <!-- Left Side Of Navbar -->
