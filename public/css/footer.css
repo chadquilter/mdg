@@ -17,7 +17,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.navbar .brand {
+.navbar-brand {
     max-height: 40px;
     overflow: visible;
     padding-top: 0;
