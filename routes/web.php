@@ -21,5 +21,6 @@ Route::get('/', 'PagesController@index');
 Route::resource('quotes', 'QuotesController');
 Route::get('/services', 'PagesController@services');
 Route::resource('jobs', 'JobsController');
+Route::resource('address', 'AddressController');
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');

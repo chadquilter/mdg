@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  <br>
   <div class="well">
     <h1>Edit Job</h1>
     {!! Form::open(['action' => ['JobsController@update', $job->job_id], 'method' => 'POST']) !!}

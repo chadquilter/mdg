@@ -15,16 +15,13 @@ class CreateAddressTable extends Migration
     {
         Schema::create('address', function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('title');
-            $table->longText('notes');
-            $table->longText('address_1');
-            $table->longText('address_2');
-            $table->longText('city');
-            $table->longText('state');
-            $table->longText('zip');
-            $table->longText('country');
-            $table->Integer('created_by');
-            $table->Integer('modified_by');
+            $table->mediumText('address1');
+            $table->mediumText('address2');
+            $table->mediumText('zipcode');
+            $table->mediumText('city');
+            $table->mediumText('state');
+            $table->mediumText('country');
+            $table->mediumText('code');
             $table->boolean('active');
             $table->timestamps();
         });

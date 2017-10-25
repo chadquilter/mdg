@@ -24,7 +24,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                       <thead class="thead-inverse">
                         <tr>
-                            <th><h3>Job Entries:</h3></th>
+                            <th nowrap><h3><span class="badge">{{ $jobs->total() }}</span> Job Entries:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -59,7 +59,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
                         <tr>
-                            <th><h3>Quote Entries:</h3></th>
+                            <th nowrap><h3><span class="badge">{{ $quotes->total() }}</span> Quote Entries:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
