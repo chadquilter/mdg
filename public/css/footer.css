@@ -17,17 +17,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.navbar-brand {
-    max-height: 40px;
-    overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-div.foot-container {
-
-}
-
 div.footer-badge{
   float: left;
   width: 30%;
